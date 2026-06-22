@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "CC Blocker — BCC Reminder for Gmail",
+  "version": "1.0.0",
+  "description": "Warns you when you CC more than 5 people in Gmail and suggests using BCC instead so addresses stay private.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

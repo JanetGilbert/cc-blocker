@@ -1,0 +1,81 @@
+/* CC Blocker — UI styles */
+
+.cc-blocker-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+}
+
+.cc-blocker-modal {
+  background: #fff;
+  width: 420px;
+  max-width: calc(100vw - 48px);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+  animation: cc-blocker-pop 0.12s ease-out;
+}
+
+@keyframes cc-blocker-pop {
+  from { transform: scale(0.96); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.cc-blocker-title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #202124;
+}
+
+.cc-blocker-body {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #5f6368;
+}
+
+.cc-blocker-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.cc-blocker-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.cc-blocker-btn-primary {
+  background: #1a73e8;
+  color: #fff;
+}
+.cc-blocker-btn-primary:hover { background: #1765cc; }
+
+.cc-blocker-btn-secondary {
+  background: transparent;
+  color: #1a73e8;
+}
+.cc-blocker-btn-secondary:hover { background: rgba(26, 115, 232, 0.08); }
+
+.cc-blocker-banner {
+  background: #fef7e0;
+  color: #5f4b16;
+  border: 1px solid #fbd56b;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 8px;
+  font-size: 13px;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 1.4;
+}
